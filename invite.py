@@ -44,7 +44,7 @@ if not client.is_user_authorized():
     client.send_code_request(phone)
     os.system('clear')
     banner()
-    client.sign_in(phone, input(gr+'[+] Введите код: '+re))
+    client.sign_in(phone, input(gr+'[+] Хуйните код: '+re))
  
 os.system('clear')
 banner()
@@ -87,13 +87,13 @@ for group in groups:
     print(gr+'['+cy+str(i)+gr+']'+cy+' - '+group.title)
     i+=1
 
-print(gr+'[+] Выберите группу для добавления участников')
+print(gr+'[+] Выберите группу для добавления Петушастников')
 g_index = input(gr+"[+] Введите номер : "+re)
 target_group=groups[int(g_index)]
  
 target_group_entity = InputPeerChannel(target_group.id,target_group.access_hash)
  
-print(gr+"[1] добавление участника по ID\n[2] Добавить участника по имени.")
+print(gr+"[1] Подтянуть Петуха по ID\n[2] Подтянуть Петуха по имени.")
 mode = int(input(gr+"Input : "+re)) 
 n = 0
 print(users)
@@ -111,14 +111,14 @@ for user in users:
 	        elif mode == 2:
 	            user_to_add = InputPeerUser(user['id'], user['access_hash'])
 	        else:
-	            sys.exit(re+"[!] Выбран недопустимый режим. пожалуйста, попробуйте снова.")
+	            sys.exit(re+"[!] Выбран хуйпонятный режим. пожалуйста, попробуйте снова.")
 	        client(InviteToChannelRequest(target_group_entity,[user_to_add]))
-	        print(gr+"[+] Ожидайте 10-30 секунд...")
+	        print(gr+"[+] Не выебывайся где-то 10-30 секунд...")
 	        time.sleep(random.randrange(10, 30))
 	    except PeerFloodError:
-	        print(re+"[!] Получаю ошибку Flood от telegram. \n[!] Сценарий сейчас останавливается. \n[!] Пожалуйста, повторите попытку через некоторое время.")
+	        print(re+"[!] Получаю Пиздюлей от telegram. \n[!] Сценарий сейчас останавливается. \n[!] Пожалуйста, повторите попытку через некоторое время.")
 	    except UserPrivacyRestrictedError:
-	        print(re+"[!] Настройки конфиденциальности пользователя не позволяют вам этого делать. Пропускаем.")
+	        print(re+"[!] Настройки конфиденциальности Петуха не позволяют вам этого делать. Ложим хуй.")
 	    except:
 	        traceback.print_exc()
 	        print(re+"[!] Непредвиденная ошибка")
