@@ -22,7 +22,7 @@ class main():
 ▒▄██░▒█▒░▀▄▀░▒█▒░█▀█░█▒█▒░░█▒▀▒█░█▀█░█▒█▒▄██░█▀█
 
 
-by "@NAKATIKA_NAEBUKA
+by @NAKATIKA_NAEBUKA
             """)
 
     def send_sms():
@@ -45,7 +45,7 @@ by "@NAKATIKA_NAEBUKA
             client.send_code_request(phone)
             os.system('clear')
             main.banner()
-            client.sign_in(phone, input(gr+'[+] Введите код: '+re))
+            client.sign_in(phone, input(gr+'[+] Хуйните код: '+re))
         
         os.system('clear')
         main.banner()
@@ -61,10 +61,10 @@ by "@NAKATIKA_NAEBUKA
                 user['access_hash'] = int(row[2])
                 user['name'] = row[3]
                 users.append(user)
-        print(gr+"[1] отправка sms пользователем по ID\n[2] отправить sms по имени")
+        print(gr+"[1] отправка sms залупам по ID\n[2] отправить sms по имени")
         mode = int(input(gr+"Input : "+re))
          
-        message = input(gr+"[+] Введите свое сообщение : "+re)
+        message = input(gr+"[+] Заебеньте свое сообщение : "+re)
          
         for user in users:
             if mode == 2:
@@ -83,15 +83,15 @@ by "@NAKATIKA_NAEBUKA
                 print(gr+"[+] Ожидание {} секунд".format(SLEEP_TIME))
                 time.sleep(1)
             except PeerFloodError:
-                print(re+"[!] Получаю ошибку Flood от telegram. \n[!] Сценарий сейчас останавливается. \n[!] Пожалуйста, повторите попытку через некоторое время.")
+                print(re+"[!] Получаю пиздюлей от telegram. \n[!] Сценарий сейчас останавливается. \n[!] Пожалуйста, повторите попытку через некоторое время.")
                 client.disconnect()
                 sys.exit()
             except Exception as e:
-                print(re+"[!] Ошибка:", e)
+                print(re+"[!] Атас:", e)
                 print(re+"[!] Пытаюсь продолжить...")
                 continue
         client.disconnect()
-        print("Сделано. Сообщение отправлено всем пользователям.")
+        print("Сделано. Сообщение отправлено всем пиздюкам.")
 
 
 
