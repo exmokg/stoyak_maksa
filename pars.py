@@ -16,7 +16,7 @@ def banner():
 ▒▄██░▒█▒░▀▄▀░▒█▒░█▀█░█▒█▒░░█▒▀▒█░█▀█░█▒█▒▄██░█▀█
 
 
-by "@NAKATIKA_NAEBUKA
+by @NAKATIKA_NAEBUKA
 
         """)
 
@@ -39,7 +39,7 @@ if not client.is_user_authorized():
     client.send_code_request(phone)
     os.system('clear')
     banner()
-    client.sign_in(phone, input(gr+'[+] Введите код: '+re))
+    client.sign_in(phone, input(gr+'[+] Захуярьте код: '+re))
  
 os.system('clear')
 banner()
@@ -64,7 +64,7 @@ for chat in chats:
     except:
         continue
  
-print(gr+'[+] Выберите группу для парсинга участников :'+re)
+print(gr+'[+] Выберите группу для парсинга Петушков :'+re)
 i=0
 for g in groups:
     print(gr+'['+cy+str(i)+gr+']'+cy+' - '+ g.title)
@@ -99,4 +99,4 @@ with open("members.csv","w",encoding='UTF-8') as f:
             last_name= ""
         name= (first_name + ' ' + last_name).strip()
         writer.writerow([username,user.id,user.access_hash,name,target_group.title, target_group.id])      
-print(gr+'[+] Участники успешно спаршены.')
+print(gr+'[+] Петушки успешно спаршены.')
