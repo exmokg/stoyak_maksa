@@ -21,7 +21,7 @@ def banner():
 ▒▄██░▒█▒░▀▄▀░▒█▒░█▀█░█▒█▒░░█▒▀▒█░█▀█░█▒█▒▄██░█▀█
 
 
-by "@NAKATIKA_NAEBUKA
+by @NAKATIKA_NAEBUKA
 	""")
 
 def requirements():
@@ -63,7 +63,7 @@ def config_setup():
 	setup = open('config.data', 'w')
 	cpass.write(setup)
 	setup.close()
-	print(gr+"[+] настройка завершена !")
+	print(gr+"[+] настройка заебашена !")
 
 def merge_csv():
 	import pandas as pd
