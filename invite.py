@@ -21,7 +21,7 @@ def banner():
 ▒▄██░▒█▒░▀▄▀░▒█▒░█▀█░█▒█▒░░█▒▀▒█░█▀█░█▒█▒▄██░█▀█
 
 
-by "@NAKATIKA_NAEBUKA
+by @NAKATIKA_NAEBUKA
         """)
         
 
