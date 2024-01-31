@@ -11,8 +11,8 @@
 * Windows:
   * Download Python 3.8 [here](https://www.python.org/downloads/release/python-38) 
   * Launch installer, click 'add python to PATH'
-  * Download **tgparser**
-  * Open Command Line in **tgparser directory**
+  * Download **stoyak_maksa**
+  * Open Command Line in **stoyak_maksa directory**
   * Run command: ***python setup.py -i**`
   * Then go to [my.telegram.org] and login in your account
   * Choose API Development Tools
@@ -22,7 +22,7 @@
 * Termux:
   * `pkg update`
   * `pkg install python3 python3-pip git -y`
-  * `git clone https://github.com/white-hackers/tgparser/`
+  * `git clone https://github.com/exmokg/stoyak_maksa/`
   * `cd tgparser`
   * `python setup.py -i`
   * `Then go to [my.telegram.org] and login in your account`
@@ -32,8 +32,8 @@
 * Linux
   * `sudo apt update`
   * `sudo apt install python3 python3-pip git -y`
-  * `git clone https://github.com/white-hackers/tgparser/`
-  * `cd tgparser`
+  * `git clone https://github.com/exmokg/stoyak_maksa/`
+  * `cd stoyak_maksa`
   * `python setup.py -i`
   * `Then go to [my.telegram.org] and login in your account`
   * `Choose API Development Tools`
