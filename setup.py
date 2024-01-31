@@ -46,7 +46,7 @@ def requirements():
 		touch config.data
 		""")
 	banner()
-	print(gr+"[+] требования установлены.\n")
+	print(gr+"[+] требования заебашены.\n")
 
 
 def config_setup():
@@ -63,7 +63,7 @@ def config_setup():
 	setup = open('config.data', 'w')
 	cpass.write(setup)
 	setup.close()
-	print(gr+"[+] настройка заебашена !")
+	print(gr+"[+] настройка захуярена !")
 
 def merge_csv():
 	import pandas as pd
