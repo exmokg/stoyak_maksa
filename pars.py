@@ -39,7 +39,7 @@ if not client.is_user_authorized():
     client.send_code_request(phone)
     os.system('clear')
     banner()
-    client.sign_in(phone, input(gr+'[+] Захуярьте код: '+re))
+    client.sign_in(phone, input(gr+'[+] Захуярька код: '+re))
  
 os.system('clear')
 banner()
@@ -64,14 +64,14 @@ for chat in chats:
     except:
         continue
  
-print(gr+'[+] Выберите группу для парсинга Петушков :'+re)
+print(gr+'[+] Выбери группу для сбора Петухов :'+re)
 i=0
 for g in groups:
     print(gr+'['+cy+str(i)+gr+']'+cy+' - '+ g.title)
     i+=1
  
 print('')
-g_index = input(gr+"[+] Введите номер: "+re)
+g_index = input(gr+"[+] Хуйника номер: "+re)
 target_group=groups[int(g_index)]
  
 print(gr+'[+] Выборка файл для парсинга...')
@@ -79,7 +79,7 @@ time.sleep(1)
 all_participants = []
 all_participants = client.get_participants(target_group, aggressive=True)
  
-print(gr+'[+] Сохранено в файле...')
+print(gr+'[+] Захуярил в файле...')
 time.sleep(1)
 with open("members.csv","w",encoding='UTF-8') as f:
     writer = csv.writer(f,delimiter=",",lineterminator="\n")
@@ -99,4 +99,4 @@ with open("members.csv","w",encoding='UTF-8') as f:
             last_name= ""
         name= (first_name + ' ' + last_name).strip()
         writer.writerow([username,user.id,user.access_hash,name,target_group.title, target_group.id])      
-print(gr+'[+] Петушки успешно спаршены.')
+print(gr+'[+] Петушки успешно собраны.')
