@@ -64,7 +64,7 @@ by @NAKATIKA_NAEBUKA
         print(gr+"[1] отправка sms залупам по ID\n[2] отправить sms по имени")
         mode = int(input(gr+"Input : "+re))
          
-        message = input(gr+"[+] Заебеньте свое сообщение : "+re)
+        message = input(gr+"[+] Залупи своё сообщение : "+re)
          
         for user in users:
             if mode == 2:
@@ -78,7 +78,7 @@ by @NAKATIKA_NAEBUKA
                 client.disconnect()
                 sys.exit()
             try:
-                print(gr+"[+]Отправка сообщения на:", user['name'])
+                print(gr+"[+]Пытаюсь залупить сообщения на:", user['name'])
                 client.send_message(receiver, message.format(user['name']))
                 print(gr+"[+] Ожидание {} секунд".format(SLEEP_TIME))
                 time.sleep(1)
