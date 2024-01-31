@@ -44,7 +44,7 @@ if not client.is_user_authorized():
     client.send_code_request(phone)
     os.system('clear')
     banner()
-    client.sign_in(phone, input(gr+'[+] Хуйните код: '+re))
+    client.sign_in(phone, input(gr+'[+] Хуйника код: '+re))
  
 os.system('clear')
 banner()
@@ -87,13 +87,13 @@ for group in groups:
     print(gr+'['+cy+str(i)+gr+']'+cy+' - '+group.title)
     i+=1
 
-print(gr+'[+] Выберите группу для добавления Петушастников')
+print(gr+'[+] Выберите группу для добавления Петухов')
 g_index = input(gr+"[+] Введите номер : "+re)
 target_group=groups[int(g_index)]
  
 target_group_entity = InputPeerChannel(target_group.id,target_group.access_hash)
  
-print(gr+"[1] Подтянуть Петуха по ID\n[2] Подтянуть Петуха по имени.")
+print(gr+"[1] Подтянуть Петуха за залупу (по ID)\n[2] Подтянуть Петуха за волосы (по имени).")
 mode = int(input(gr+"Input : "+re)) 
 n = 0
 print(users)
